@@ -1,5 +1,8 @@
+import sys
+import time
+
 print("Welcome to the Area Tool. Choose a shape from the menu, input the lengths, and get your area! \n Made by Qubisted | Advaith Sai")
-def calcArea(r):
+def calcArea():
     r = float(input('What is the radius of the circle? > '))
     PI = 3.142
     Area = PI * (r*r)
@@ -37,6 +40,7 @@ def goAgain():
         askMenu()
     else:
         print("Bye!")
-        quit()
+        time.sleep(3)
+        sys.exit()
 
 askMenu()

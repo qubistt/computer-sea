@@ -1,3 +1,6 @@
+import sys
+import time
+
 number_names = ("zero-invalid", "one-invalid", "two-invalid", "tri", "tetra",
                 "penta", "hexa", "hepta", "octa", "nona", "deca", "hendeca", "dodeca", "Triskaideca", "Tetradeca",)
 
@@ -15,7 +18,9 @@ def goAgain():
         get_polygon_name()
     else:
         print("Bye!")
-        quit()
+        time.sleep(3)
+        sys.exit()
+        
 
 get_polygon_name()
 

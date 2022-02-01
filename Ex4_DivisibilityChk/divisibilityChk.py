@@ -1,3 +1,6 @@
+import sys
+import time
+
 print("Welcome to the DiviCheck. Checks if a number is divisible by 5 and 11 \n Made by Qubisted | Advaith Sai")
 
 def check():
@@ -15,6 +18,8 @@ def goAgain():
         check()
     else:
         print("Bye!")
-        quit()
+        time.sleep(3)
+        sys.exit()
+        
 
 check()

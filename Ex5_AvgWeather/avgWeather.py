@@ -1,3 +1,6 @@
+import sys
+import time
+
 print("Welcome to the WeatherAverager. Asks the weather for the last 3 days and gives an average temperature. \n Made by Qubisted | Advaith Sai")
 def get_weather():
     units = str(input("Celsius or Fahrenheit? C/F > "))
@@ -23,7 +26,8 @@ def goAgain():
         get_weather()
     else:
         print("Bye!")
-        quit()
+        time.sleep(3)
+        sys.exit()
 
 get_weather()
 
